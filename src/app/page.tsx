@@ -2,6 +2,7 @@
 
 // import Image from "next/image";
 import styles from "./Home.module.css";
+import Button from "../shared/ui/Button/Button";
 import { Footer, Header } from "../widgets";
 
 export default function Home() {
@@ -13,7 +14,9 @@ export default function Home() {
           <div className={styles.title}>Claim your <br/> Human NFT</div>
           <div className={styles.subtitle}>Mint your “I am human” NFT on Human appchain</div>
         </div>
-        <div className={styles.button}>Connect Wallet</div>
+        {/* <div className={styles.button}>Connect Wallet</div> */}
+        <Button connected={false} address="0x7853c0b7e123c0b7" onClick={() => {}} />
+        <Button connected={true} address="0x7853c0b7e123c0b7" onClick={() => {}} />
       </div>
     <Footer />
     </>

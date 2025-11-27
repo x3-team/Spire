@@ -1,5 +1,6 @@
 import styles from "./Header.module.css";
 import Image from "next/image";
+import Button from "../../shared/ui/Button/Button";
 import Lottie from "lottie-react";
 import animationData from "../../../public/header/animation.json";
 
@@ -11,6 +12,7 @@ export function Header() {
           animationData={animationData}
           loop
           autoplay
+          className={styles.lottie}
           style={{ width: 36, height: 36.19 }}
         />
         <Image
@@ -22,13 +24,12 @@ export function Header() {
           priority
         />
       </div>
-      <Image
-        src="/header/button.svg"
-        alt="button"
-        width={229}
-        height={42}
-        className={styles.button}
-        priority
+
+      <Button
+        connected={true}
+        address="0x7853c0b7e123c0b7"
+        onClick={() => {}}
+        style={{ width: 270, height: 42}}
       />
     </div>
   );
