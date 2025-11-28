@@ -6,18 +6,21 @@ export const VerifyErrorCard = () => {
   return (
     <section className={styles.wrapper}>
       <div className={styles.alert}>
-        <div className={styles.alertHeader}>
-          <span className={styles.alertIcon}>✕</span>
-          <span className={styles.alertTitle}>Error checking verification status</span>
+        <div className={styles.alertBlock}>
+          <div className={styles.alertHeader}>
+            <span className={styles.alertIcon}>✕</span>
+            <span className={styles.alertTitle}>
+              Error checking verification status
+            </span>
+          </div>
+          <p className={styles.alertText}>
+            User rejected the request. Request Argument from: 0x7853Eabb6cFa...
+          </p>
         </div>
-        <p className={styles.alertText}>
-          User rejected the request. Request Argument from: 0x7853Eabb6cFa...
-        </p>
+        <button className={styles.primaryButton}>
+          Try again to Verify your Humanity
+        </button>
       </div>
-
-      <button className={styles.primaryButton}>
-        Try again to Verify your Humanity
-      </button>
 
       <div className={styles.walletCard}>
         <div className={styles.walletHeader}>

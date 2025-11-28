@@ -1,11 +1,12 @@
 .container {
   position: fixed;
   bottom: 0;
-  height: 50px;
+  /* height: 50px; */
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+ padding: 15px 16px 16px 16px;
   /* border-top: 1px solid #e0e0e0; */
 }
 
@@ -18,5 +19,7 @@
   letter-spacing: -0.05em;
   color: #0B1B47;
   opacity: 0.5;
+  /* overflow-wrap: break-word; */
+  text-align: center; 
 }
 

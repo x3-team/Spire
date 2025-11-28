@@ -19,19 +19,38 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  transition: background 0.2s;
+  /* transition: background 0.2s; */
+  transition: filter 0.2s ease, opacity 0.2s ease;
 }
 
-.button {
+/* .button {
   background: #0b1b47;
   color: #fff;
   letter-spacing: -0.05em;
+} */
+
+/* ⬇️ Неподключённое состояние — ГРАДИЕНТ */
+.button {
+  color: #fff;
+  letter-spacing: -0.05em;
+  background:
+  linear-gradient(
+    180deg,
+    rgba(197, 247, 227, 0.5) -78%,
+    rgba(11, 27, 71, 0) 100%
+    ),
+  linear-gradient(0deg, #0B1B47, #0B1B47);
 }
 
+
+/* .button:hover {
+  background: #132a6b;
+} */
 
 .button:hover {
-  background: #132a6b;
+  filter: brightness(1.05);
 }
+
 
 /* Отличия для connected */
 .connected {

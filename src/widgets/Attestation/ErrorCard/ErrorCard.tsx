@@ -13,7 +13,7 @@ export const ErrorCard = () => {
       <div className={styles.stepTitle}>Step 2. Scan QR with Self app</div>
 
       <div className={styles.qrWrapper}>
-        <img src="/qr-mock.png" className={styles.qr} />
+        <img src="/attestation/qr-mock.png" className={styles.qr} />
         <div className={styles.qrText}>Use only Self app to scan</div>
       </div>
 

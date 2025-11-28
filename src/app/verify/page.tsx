@@ -15,7 +15,7 @@ export default function VerifyPage() {
         <div className={styles.content}>
           <div className={styles.heading}>
             <h1 className={styles.title}>
-              Claim your <br /> Human NFT
+              Claim your Human NFT
             </h1>
             <p className={styles.subtitle}>
               Mint your &ldquo;I am human&rdquo; NFT on Human appchain
@@ -29,13 +29,13 @@ export default function VerifyPage() {
               }}
             />
           ) : (
-            <VerifyStepOneCard
-              onPrimaryClick={() => {
-                // здесь потом будет реальный запуск проверки
-                setIsVerified(true);
-              }}
-            />
-            // <VerifyErrorCard />
+            // <VerifyStepOneCard
+            //   onPrimaryClick={() => {
+            //     // здесь потом будет реальный запуск проверки
+            //     setIsVerified(true);
+            //   }}
+            // />
+            <VerifyErrorCard />
           )}
         </div>
 

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import styles from "./VerifyStepOneCard.module.css";
 
 type Props = {
@@ -9,28 +10,40 @@ type Props = {
 export const VerifyStepOneCard: React.FC<Props> = ({ onPrimaryClick }) => {
   return (
     <section className={styles.card}>
-      <div className={styles.checkIcon}>✓</div>
-
-      <div className={styles.cardText}>
-        <h2 className={styles.cardTitle}>
-          This NFT can only be claimed by verified humans
-        </h2>
-        <p className={styles.cardSubtitle}>
-          The contract will automatically verify your attestation status on Celo L2
-          and check for any duplicate claims
-        </p>
+      <div className={styles.cardBorder}>
+        <div className={styles.cardSection}>
+          {/* <div className={styles.checkIcon}>✓</div> */}
+          <Image
+            src="/verify/check.svg"
+            alt="logo"
+            width={25.078126845108503}
+            height={27.581251075956672}
+            className={styles.logo}
+            priority
+          />
+          <div className={styles.cardText}>
+            <h2 className={styles.cardTitle}>
+              This NFT can only be claimed by verified humans
+            </h2>
+            <p className={styles.cardSubtitleCustom}>
+              The contract will automatically verify your attestation status on
+              Celo L2 and check for any duplicate claims
+            </p>
+          </div>
+        </div>
+        <button className={styles.primaryButton} onClick={onPrimaryClick}>
+          Verify your humanity
+        </button>
       </div>
 
-      <button className={styles.primaryButton} onClick={onPrimaryClick}>
-        Verify your humanity
-      </button>
-
-      <div className={styles.walletRow}>
-        <span className={styles.walletLabel}>Connected Wallet</span>
-        <button className={styles.disconnect}>Disconnect</button>
-      </div>
-      <div className={styles.walletAddress}>
-        0x7853Eabb6cFa980eBfD27e3F77e69590EA53c0b7
+      <div className={styles.walletCard}>
+        <div className={styles.walletRow}>
+          <span className={styles.walletLabel}>Connected Wallet</span>
+          <button className={styles.disconnect}>Disconnect</button>
+        </div>
+        <div className={styles.walletAddress}>
+          0x7853Eabb6cFa980eBfD27e3F77e69590EA53c0b7
+        </div>
       </div>
     </section>
   );

@@ -9,10 +9,16 @@
 /* красный алерт */
 
 .alert {
-  background: #ffe7e7;
+  background: #FFD4E080;
   border-radius: 4px;
-  padding: 16px 20px;
+  /* padding: 16px 20px; */
+  padding: 2px;
   font-family: "Work Sans", sans-serif;
+}
+
+.alertBlock {
+  padding: 16px 20px;
+
 }
 
 .alertHeader {
@@ -48,16 +54,19 @@
   background: #0b1b47;
   color: #ffffff;
   font-family: "Work Sans", sans-serif;
-  font-size: 14px;
   font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 125%;
   letter-spacing: -0.05em;
+  text-align: center;
   cursor: pointer;
 }
 
 /* блок с кошельком */
 
 .walletCard {
-  background: #f4f6fb;
+  background: #0B1B4708;
   border-radius: 4px;
   padding: 12px 16px;
   font-family: "Work Sans", sans-serif;

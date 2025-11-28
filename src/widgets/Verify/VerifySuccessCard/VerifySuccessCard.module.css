@@ -2,16 +2,29 @@
   width: 100%;
   max-width: 520px;
   border-radius: 4px;
-  padding: 40px 40px 32px;
-  background: linear-gradient(180deg, #f5f0ff 0%, #ffffff 60%);
   box-shadow: 0px 20px 40px rgba(2, 25, 79, 0.08);
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  background: none;
+}
+
+.cardSection {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 270px;
 }
 
 .cardVerified {
-  background: linear-gradient(180deg, #e0ffe9 0%, #ffffff 60%);
+  background: linear-gradient(
+      180deg,
+      rgba(197, 247, 227, 0.5) 0%,
+      rgba(255, 255, 255, 0) 86.15%
+    ),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  border: 1px solid #0b1b4733;
+  border-radius: 4px;
 }
 
 .checkIcon {
@@ -28,16 +41,20 @@
 .cardTitle {
   font-family: "Concrette S TRIAL", sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 120%;
   color: #0b1b47;
 }
 
 .cardSubtitle {
   font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 14px;
-  line-height: 140%;
-  color: #4b587c;
+  line-height: 125%;
+  letter-spacing: -0.05em;
+  color: #0b1b47;
+  opacity: 0.5;
 }
 
 .primaryButton {
@@ -46,7 +63,12 @@
   padding: 16px 18px;
   border: none;
   border-radius: 2px;
-  background: #0b1b47;
+  background: linear-gradient(
+      180deg,
+      rgba(197, 247, 227, 0.5) -78%,
+      rgba(11, 27, 71, 0) 100%
+    ),
+    linear-gradient(0deg, #0b1b47, #0b1b47);
   color: #ffffff;
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
@@ -56,10 +78,54 @@
   cursor: pointer;
 }
 
-.walletRow,
-.walletLabel,
-.disconnect,
+.walletCard {
+  background: #0b1b4708;
+  padding: 20px;
+}
+
+.walletRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.walletLabel {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 125%;
+  letter-spacing: -0.05em;
+  color: #0b1b47;
+}
+
+.disconnect {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 125%;
+  letter-spacing: -0.05em;
+  color: #0b1b47;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 1px;
+  text-decoration-skip-ink: auto;
+  opacity: 0.5;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
 .walletAddress {
-  /* можно скопировать отсюда из StepOneCard.module.css
-     или импортнуть общий файл, если не хочешь дублировать */
+  margin-top: 4px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 125%;
+  letter-spacing: -0.05em;
+  color: #0b1b47;
+  opacity: 0.5;
 }
