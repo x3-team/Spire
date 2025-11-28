@@ -1,7 +1,7 @@
 'use client'
 
 // import Image from "next/image";
-import styles from "./Home.module.css";
+import styles from "./page.module.css";
 import Button from "../shared/ui/Button/Button";
 import { Footer, Header } from "../widgets";
 

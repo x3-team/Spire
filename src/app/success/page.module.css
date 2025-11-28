@@ -1,0 +1,163 @@
+.page {
+  min-height: calc(100vh - 80px);
+  /* max-width: 480px; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 120px 16px; */
+  background: linear-gradient(180deg, #c4dcf6 0%, #ffffff 40%, #ffe5f1 100%);
+}
+
+.content {
+  width: 100%;
+  /* max-width: 960px; */
+  max-width: 480px;
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  /* max-width: 640px; */
+  /* background: #ffffff; */
+  border-radius: 4px;
+  box-shadow: 0px 20px 40px rgba(2, 25, 79, 0.08);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 4px;
+}
+
+.topText {
+  padding: 32px;
+  background: url("/mint/diamond.svg") center/cover no-repeat;
+  width: 480px;
+  height: 400px;
+}
+
+.imageBlock {
+  width: 480px;
+  height: 400px;
+  background: url("/mint/diamond.svg") center/cover no-repeat;
+  margin: 0 auto; /* чтобы было по центру */
+  border: 1px solid #d0d0d0; /* рамка если нужна */
+}
+
+/* верхняя зона с текстом и иллюстрацией */
+
+.cardTop {
+  padding: 32px 32px 240px; /* верхний текст + пространство под изображение */
+  background: url("/mint/diamond.svg") bottom right/contain no-repeat;
+  /* linear-gradient(180deg, #f5f6ff 0%, #e4ffe8 100%); */
+}
+
+.textBlock {
+  padding-bottom: 24px;
+}
+
+.title {
+  font-family: "Concrette S TRIAL", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 105%;
+  letter-spacing: -0.02em;
+  color: #0b1b47;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  color: #4b587c;
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.image {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+}
+
+/* баннер и кнопка снизу */
+
+.verifiedBanner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e1ffe9;
+  padding: 12px 20px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  color: #0b1b47;
+}
+
+.shieldIcon {
+  font-size: 16px;
+}
+
+.primaryButton {
+  border: none;
+  width: 100%;
+  padding: 16px 18px;
+  background: #0b1b47;
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  cursor: pointer;
+}
+
+/* мобильная версия */
+
+@media (max-width: 900px) {
+  .page {
+    padding: 96px 16px 40px;
+  }
+
+  .content {
+    max-width: 358px;
+  }
+
+  .cardTop {
+    grid-template-columns: 1fr;
+    padding: 24px 20px 0;
+  }
+
+  .imageWrapper {
+    justify-content: center;
+  }
+
+  .image {
+    max-width: 260px;
+  }
+
+  .imageBlock {
+    width: 358px;
+    height: 280px;
+    background-size: cover;
+  }
+
+  .topText {
+    width: 358px;
+    height: 280px;
+    padding: 24px 20px;
+    /* border: ; */
+     border: 1px solid #0B1B47;
+    border-radius: 4px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 110%;
+  }
+}

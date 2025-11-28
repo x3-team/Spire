@@ -1,0 +1,65 @@
+.card {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 4px;
+  padding: 40px 40px 32px;
+  background: linear-gradient(180deg, #f5f0ff 0%, #ffffff 60%);
+  box-shadow: 0px 20px 40px rgba(2, 25, 79, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cardVerified {
+  background: linear-gradient(180deg, #e0ffe9 0%, #ffffff 60%);
+}
+
+.checkIcon {
+  font-size: 28px;
+  color: #0b8f3c;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardTitle {
+  font-family: "Concrette S TRIAL", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  color: #0b1b47;
+}
+
+.cardSubtitle {
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  color: #4b587c;
+}
+
+.primaryButton {
+  margin-top: 4px;
+  width: 100%;
+  padding: 16px 18px;
+  border: none;
+  border-radius: 2px;
+  background: #0b1b47;
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 125%;
+  letter-spacing: -0.05em;
+  cursor: pointer;
+}
+
+.walletRow,
+.walletLabel,
+.disconnect,
+.walletAddress {
+  /* можно скопировать отсюда из StepOneCard.module.css
+     или импортнуть общий файл, если не хочешь дублировать */
+}

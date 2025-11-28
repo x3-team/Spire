@@ -1,0 +1,103 @@
+.wrapper {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* красный алерт */
+
+.alert {
+  background: #ffe7e7;
+  border-radius: 4px;
+  padding: 16px 20px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.alertHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.alertIcon {
+  color: #c20000;
+  font-size: 16px;
+}
+
+.alertTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #c20000;
+}
+
+.alertText {
+  font-size: 12px;
+  color: #8a1414;
+}
+
+/* синяя кнопка */
+
+.primaryButton {
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  padding: 16px 18px;
+  background: #0b1b47;
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  cursor: pointer;
+}
+
+/* блок с кошельком */
+
+.walletCard {
+  background: #f4f6fb;
+  border-radius: 4px;
+  padding: 12px 16px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.walletHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.walletLabel {
+  font-size: 12px;
+  color: #4b587c;
+}
+
+.disconnect {
+  font-size: 12px;
+  color: #4b587c;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.walletAddress {
+  font-size: 12px;
+  color: #0b1b47;
+}
+
+/* мобильная адаптация */
+
+@media (max-width: 900px) {
+  .wrapper {
+    max-width: 360px;
+  }
+
+  .primaryButton {
+    font-size: 14px;
+  }
+}

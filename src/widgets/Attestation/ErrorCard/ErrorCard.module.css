@@ -1,0 +1,65 @@
+.card {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 4px;
+  box-shadow: 0px 20px 40px rgba(2, 25, 79, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.successBanner {
+  background: #e1ffe9;
+  padding: 16px;
+  border-radius: 4px;
+  font-family: "Work Sans";
+}
+
+.hash {
+  font-size: 12px;
+  margin-top: 4px;
+  color: #4b587c;
+}
+
+.stepTitle {
+  font-family: "Work Sans";
+  color: #0b1b47;
+  font-size: 14px;
+}
+
+.qrWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr {
+  width: 160px;
+  height: 160px;
+}
+
+.qrText {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.errorBanner {
+  background: #ffe7e7;
+  padding: 16px;
+  border-radius: 4px;
+  color: #c20000;
+  font-family: "Work Sans";
+  font-size: 14px;
+}
+
+.primaryButton {
+  width: 100%;
+  background: #0b1b47;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}

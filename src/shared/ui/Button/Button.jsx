@@ -1,7 +1,7 @@
 import styles from './Button.module.css';
 // import Image from 'next/image';
 
-export default function Button({ connected = false, address = '', onClick, children = null , style}) {
+export default function Button({ connected = false, address = '', onClick, children = null , style = {}}) {
   // Функция для форматирования адреса
   const formatAddress = (addr) => {
     if (!addr) return '';
@@ -16,7 +16,6 @@ export default function Button({ connected = false, address = '', onClick, child
       type="button"
     //   style={connected ? { width: 229, height: 42, gap: 8, padding: 12, borderRadius: 2, background: '#0B1B4708', opacity: 1 } : {}}
       style={{...style}}
-
     >
       {connected ? (
         <>

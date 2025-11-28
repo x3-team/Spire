@@ -1,0 +1,92 @@
+.card {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 4px;
+  padding: 40px 40px 32px;
+  background: linear-gradient(180deg, #f5f0ff 0%, #ffffff 60%);
+  box-shadow: 0px 20px 40px rgba(2, 25, 79, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.checkIcon {
+  font-size: 28px;
+  color: #0b8f3c;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardTitle {
+  font-family: "Concrette S TRIAL", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  color: #0b1b47;
+}
+
+.cardSubtitle {
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  color: #4b587c;
+}
+
+.primaryButton {
+  margin-top: 4px;
+  width: 100%;
+  padding: 16px 18px;
+  border: none;
+  border-radius: 2px;
+  background: #0b1b47;
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 125%;
+  letter-spacing: -0.05em;
+  cursor: pointer;
+}
+
+.walletRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.walletLabel {
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  color: #4b587c;
+}
+
+.disconnect {
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  color: #4b587c;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.walletAddress {
+  margin-top: 4px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  color: #0b1b47;
+}
+
+/* мобилка, если нужно отдельно для карточки */
+@media (max-width: 900px) {
+  .card {
+    max-width: 100%;
+    padding: 24px 20px 24px;
+  }
+}
