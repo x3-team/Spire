@@ -29,13 +29,13 @@ export default function VerifyPage() {
               }}
             />
           ) : (
-            // <VerifyStepOneCard
-            //   onPrimaryClick={() => {
-            //     // здесь потом будет реальный запуск проверки
-            //     setIsVerified(true);
-            //   }}
-            // />
-            <VerifyErrorCard />
+            <VerifyStepOneCard
+              onPrimaryClick={() => {
+                // здесь потом будет реальный запуск проверки
+                setIsVerified(true);
+              }}
+            />
+            // <VerifyErrorCard />
           )}
         </div>
 

@@ -17,9 +17,9 @@ export const StepTwoQRCard = () => {
       </div>
 
       <div className={styles.qrWrapper}>
-        <img src="/qr-mock.png" alt="QR Code" className={styles.qr} />
+        <img src="/attestation/qr-mock.png" alt="QR Code" className={styles.qr} />
         <div className={styles.qrText}>Use only Self app to scan</div>
-        <img src="/self-logo.svg" alt="Self" className={styles.selfLogo} />
+        <img src="/attestation/self-logo.svg" alt="Self" className={styles.selfLogo} />
       </div>
 
       <button className={styles.primaryButton}>
