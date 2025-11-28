@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 import Button from "../shared/ui/Button/Button";
 import { Footer, Header } from "../widgets";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
     <Header />
@@ -16,7 +16,7 @@ export default function Home() {
         </div>
         {/* <div className={styles.button}>Connect Wallet</div> */}
         <Button connected={false} address="0x7853c0b7e123c0b7" onClick={() => {}} />
-        <Button connected={true} address="0x7853c0b7e123c0b7" onClick={() => {}} />
+        {/* <Button connected={true} address="0x7853c0b7e123c0b7" onClick={() => {}} /> */}
       </div>
     <Footer />
     </>

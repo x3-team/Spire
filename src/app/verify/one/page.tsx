@@ -5,7 +5,7 @@ import styles from './page.module.css';
 // import { Header, Footer } from '../../widgets';
 import { Header, Footer, VerifyStepOneCard, VerifySuccessCard, VerifyErrorCard } from "../../../widgets";
 
-export default function VerifyPage() {
+export default function VerifyPageOne() {
   const [isVerified, setIsVerified] = useState(false);
 
   return (

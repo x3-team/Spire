@@ -3,7 +3,7 @@
 import styles from "./page.module.css";
 import { Header, Footer, StepOneCard, StepTwoQRCard, SuccessCard, ErrorCard } from "../../../widgets";
 
-export default function AttestationPage() {
+export default function AttestationPageOne() {
   return (
     <>
       <Header />

@@ -2,10 +2,19 @@
   width: 100%;
   max-width: 520px;
   border-radius: 4px;
-  box-shadow: 0px 20px 40px rgba(2, 25, 79, 0.08);
+  /* box-shadow: 0px 20px 40px rgba(2, 25, 79, 0.08); */
   display: flex;
   flex-direction: column;
   background: none;
+  gap: 4px;
+}
+
+.cardBorder {
+  background:
+    linear-gradient(180deg, rgba(197, 247, 227, 0.5) 0%, rgba(255, 255, 255, 0) 86.15%),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  border: 1px solid #0b1b4733;
+  border-radius: 4px;
 }
 
 .cardSection {
@@ -16,7 +25,7 @@
   height: 270px;
 }
 
-.cardVerified {
+/* .cardVerified {
   background: linear-gradient(
       180deg,
       rgba(197, 247, 227, 0.5) 0%,
@@ -25,7 +34,7 @@
     linear-gradient(0deg, #ffffff, #ffffff);
   border: 1px solid #0b1b4733;
   border-radius: 4px;
-}
+} */
 
 .checkIcon {
   font-size: 28px;
