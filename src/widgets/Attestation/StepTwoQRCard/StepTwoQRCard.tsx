@@ -1,8 +1,12 @@
 "use client";
 
+import Button from "@/src/shared/ui/Button/Button";
 import styles from "./StepTwoQRCard.module.css";
+import { useRouter } from "next/navigation";
 
 export const StepTwoQRCard = () => {
+  const router = useRouter();
+
   return (
     <div className={styles.card}>
       <div className={styles.successBanner}>
@@ -22,9 +26,11 @@ export const StepTwoQRCard = () => {
         <img src="/attestation/self-logo.svg" alt="Self" className={styles.selfLogo} />
       </div>
 
-      <button className={styles.primaryButton}>
+      {/* <button className={styles.primaryButton}>
         Generate Address Proof Signature
-      </button>
+      </button> */}
+      <Button connected={false} address="0x7853c0b7e123c0b7" onClick={() => router.push("/attestation/success")} />
+      
 
       <div className={`${styles.disabledStep}`}>
         Step 3. Check Verification Status

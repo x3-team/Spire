@@ -2,8 +2,12 @@
 
 import styles from "./page.module.css";
 import { Header, Footer } from "../../widgets";
+import Button from "@/src/shared/ui/Button/Button";
+import { useRouter } from "next/navigation";
 
 export default function MintFailPage() {
+  const router = useRouter();
+
   return (
     <>
       <Header />
@@ -24,9 +28,11 @@ export default function MintFailPage() {
               </p>
             </div>
 
-            <button className={styles.primaryButton}>
+            {/* <button className={styles.primaryButton}>
               Back to Human Appchain
-            </button>
+            </button> */}
+            <Button connected={false} address="0x7853c0b7e123c0b7" onClick={() => router.push("/")} />
+            
           </section>
 
           <section className={styles.faqSection}>

@@ -24,9 +24,9 @@ export default function VerifyPageSuccess() {
 
           {/* {isVerified ? ( */}
             <VerifySuccessCard
-              onPrimaryClick={() => {
-                console.log("Mint Human NFT (mock)");
-              }}
+              // onPrimaryClick={() => {
+              //   console.log("Mint Human NFT (mock)");
+              // }}
             />
           {/* ) : (
             // <VerifyStepOneCard

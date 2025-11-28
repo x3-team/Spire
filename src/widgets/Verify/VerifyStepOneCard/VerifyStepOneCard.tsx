@@ -2,12 +2,17 @@
 
 import Image from "next/image";
 import styles from "./VerifyStepOneCard.module.css";
+import Button from "@/src/shared/ui/Button/Button";
+import { useRouter } from "next/navigation";
 
 type Props = {
   onPrimaryClick?: () => void;
 };
 
-export const VerifyStepOneCard: React.FC<Props> = ({ onPrimaryClick }) => {
+// export const VerifyStepOneCard: React.FC<Props> = ({ onPrimaryClick }) => {
+export const VerifyStepOneCard: React.FC<Props> = () => {
+  const router = useRouter();
+
   return (
     <section className={styles.card}>
       <div className={styles.cardBorder}>
@@ -31,9 +36,11 @@ export const VerifyStepOneCard: React.FC<Props> = ({ onPrimaryClick }) => {
             </p>
           </div>
         </div>
-        <button className={styles.primaryButton} onClick={onPrimaryClick}>
+        {/* <button className={styles.primaryButton} onClick={onPrimaryClick}>
           Verify your humanity
-        </button>
+        </button> */}
+        <Button connected={false} address="0x7853c0b7e123c0b7" onClick={() => router.push("/verify/success")} />
+        
       </div>
 
       <div className={styles.walletCard}>

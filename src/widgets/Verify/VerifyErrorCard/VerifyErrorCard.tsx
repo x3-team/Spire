@@ -1,8 +1,12 @@
 "use client";
 
+import Button from "@/src/shared/ui/Button/Button";
 import styles from "./VerifyErrorCard.module.css";
+import { useRouter } from "next/navigation";
 
 export const VerifyErrorCard = () => {
+  const router = useRouter();
+
   return (
     <section className={styles.wrapper}>
       <div className={styles.alert}>
@@ -17,9 +21,11 @@ export const VerifyErrorCard = () => {
             User rejected the request. Request Argument from: 0x7853Eabb6cFa...
           </p>
         </div>
-        <button className={styles.primaryButton}>
+        {/* <button className={styles.primaryButton}>
           Try again to Verify your Humanity
-        </button>
+        </button> */}
+          <Button connected={false} address="0x7853c0b7e123c0b7" onClick={() => router.push("/attestation/one")} />
+        
       </div>
 
       <div className={styles.walletCard}>

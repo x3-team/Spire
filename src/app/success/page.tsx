@@ -2,8 +2,12 @@
 
 import styles from "./page.module.css";
 import { Header, Footer } from "../../widgets";
+import Button from "@/src/shared/ui/Button/Button";
+import { useRouter } from "next/navigation";
 
 export default function MintSuccessPage() {
+  const router = useRouter();
+
   return (
     <>
       <Header />
@@ -31,9 +35,10 @@ export default function MintSuccessPage() {
               <span className={styles.shieldIcon}>🛡</span>
             </div>
 
-            <button className={styles.primaryButton}>
+            {/* <button className={styles.primaryButton}>
               Try to mint another to see Human NFT’s Sybil resistance in action
-            </button>
+            </button> */}
+              <Button connected={false} address="0x7853c0b7e123c0b7" onClick={() => router.push("/fail")} />
           </section>
         </div>
       </main>

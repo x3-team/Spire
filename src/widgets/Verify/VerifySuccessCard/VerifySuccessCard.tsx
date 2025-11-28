@@ -2,12 +2,17 @@
 
 import Image from "next/image";
 import styles from "./VerifySuccessCard.module.css";
+import Button from "@/src/shared/ui/Button/Button";
+import { useRouter } from "next/navigation";
 
 type Props = {
   onPrimaryClick?: () => void;
 };
 
-export const VerifySuccessCard: React.FC<Props> = ({ onPrimaryClick }) => {
+// export const VerifySuccessCard: React.FC<Props> = ({ onPrimaryClick }) => {
+export const VerifySuccessCard: React.FC<Props> = () => {
+  const router = useRouter();
+
   return (
     <section className={`${styles.card} ${styles.cardVerified}`}>
       <div className={styles.cardBorder}>
@@ -32,9 +37,15 @@ export const VerifySuccessCard: React.FC<Props> = ({ onPrimaryClick }) => {
             </p>
           </div>
         </div>
-        <button className={styles.primaryButton} onClick={onPrimaryClick}>
+        {/* <button className={styles.primaryButton} onClick={onPrimaryClick}>
           Mint Human NFT
-        </button>
+        </button> */}
+        <Button
+          connected={false}
+          address="0x7853c0b7e123c0b7"
+          onClick={() => router.push("/verify/fail")}
+          style={{ width: "100%" }}
+        />
       </div>
 
       <div className={styles.walletCard}>

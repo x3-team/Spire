@@ -1,8 +1,12 @@
 "use client";
 
+import Button from "@/src/shared/ui/Button/Button";
 import styles from "./ErrorCard.module.css";
+import { useRouter } from "next/navigation";
 
 export const ErrorCard = () => {
+  const router = useRouter();
+
   return (
     <div className={styles.card}>
       <div className={styles.successBanner}>
@@ -21,9 +25,11 @@ export const ErrorCard = () => {
         ✕ Error checking verification status. Please, scan and verify again.
       </div>
 
-      <button className={styles.primaryButton}>
+      {/* <button className={styles.primaryButton}>
         Check your Verification Status
-      </button>
+      </button> */}
+        <Button connected={false} address="0x7853c0b7e123c0b7" onClick={() => router.push("/success")} />
+      
     </div>
   );
 };

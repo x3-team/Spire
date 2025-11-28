@@ -29,12 +29,14 @@ export default function VerifyPageOne() {
               }}
             />
           ) : ( */}
+
+
             <VerifyStepOneCard
-              onPrimaryClick={() => {
-                // здесь потом будет реальный запуск проверки
-                setIsVerified(true);
-              }}
+              // onPrimaryClick={() => {
+              //   setIsVerified(true);
+              // }}
             />
+            
             {/* // <VerifyErrorCard /> */}
           {/* )} */}
         </div>
