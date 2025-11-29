@@ -1,13 +1,37 @@
 "use client";
 
-// import Image from "next/image";
 import styles from "./page.module.css";
+import '@rainbow-me/rainbowkit/styles.css';
 import Button from "../shared/ui/Button/Button";
 import { Footer, HeaderMain } from "../widgets";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+import { useAccount } from "wagmi";
+import { ConnectButton, useConnectModal } from "@rainbow-me/rainbowkit";
+
+// import { getDefaultConfig, RainbowKitProvider, ConnectButton } from '@rainbow-me/rainbowkit';
+// import { WagmiProvider } from 'wagmi';
+// import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+// import { mainnet, polygon, optimism, arbitrum, base } from 'wagmi/chains';
 
 export default function HomePage() {
   const router = useRouter();
+  const { openConnectModal } = useConnectModal();
+  const { isConnected, address } = useAccount();
+
+  useEffect(() => {
+    if (isConnected) {
+      router.push("/verify/one");
+    }
+  }, [isConnected, router]);
+
+  const handleClick = () => {
+    if (!isConnected && openConnectModal) {
+      openConnectModal();
+    } else {
+      router.push("/verify/one");
+    }
+  };
 
   return (
     <>
@@ -22,15 +46,12 @@ export default function HomePage() {
               Mint your “I am human” NFT on Human appchain
             </div>
           </div>
-          {/* <div className={styles.button}>Connect Wallet</div> */}
-          {/* <Button connected={false} address="0x7853c0b7e123c0b7" onClick={() => {}} /> */}
-          <Button
-            connected={false}
-            address="0x7853c0b7e123c0b7"
-            onClick={() => router.push("/verify/one")}
-          />
-
-          {/* <Button connected={true} address="0x7853c0b7e123c0b7" onClick={() => {}} /> */}
+          {/* <Button
+            connected={isConnected}
+            address={address}
+            onClick={handleClick}
+          /> */}
+          <ConnectButton />
         </div>
       </div>
 
