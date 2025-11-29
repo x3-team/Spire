@@ -11,7 +11,7 @@ export function HeaderMain() {
   return (
     <div
       className={styles.container}
-      onClick={() => router.push("/")}
+      // onClick={() => router.push("/")}
       style={{ cursor: "pointer" }}
     >
       <div className={styles.logoContainer}>
@@ -35,7 +35,7 @@ export function HeaderMain() {
       <Button
         connected={false}
         address="0x7853c0b7e123c0b7"
-        onClick={() => {}}
+        onClick={() => router.push("/verify/one")} 
         style={{ width: 270, height: 42 }}
       />
     </div>

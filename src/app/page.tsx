@@ -2,7 +2,7 @@
 
 import styles from "./page.module.css";
 import '@rainbow-me/rainbowkit/styles.css';
-import Button from "../shared/ui/Button/Button";
+// import Button from "../shared/ui/Button/Button";
 import { Footer, HeaderMain } from "../widgets";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";

@@ -1,18 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import styles from "./page.module.css";
-// import { Header, Footer } from '../../widgets';
-import {
-  Header,
-  Footer,
-  // VerifyStepOneCard,
-  // VerifySuccessCard,
-  VerifyErrorCard,
-} from "../../../widgets";
+import { Header, Footer, VerifyErrorCard } from "../../../widgets";
 
 export default function VerifyPageFail() {
-  // const [isVerified, setIsVerified] = useState(false);
 
   return (
     <>
