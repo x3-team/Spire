@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  turbopack: {},
-  // Если не используете кастомный webpack, уберите webpack-конфиг
+  /* config options here */
 };
 
 export default nextConfig;
