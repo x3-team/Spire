@@ -10,16 +10,16 @@
   justify-content: center;
   gap: 32px;
   background: url("/main/mountains.svg") no-repeat center/cover,
+  linear-gradient(
+    178.54deg,
+    rgba(255, 213, 224, 0) 8.52%,
+    rgba(255, 212, 224, 0.657536) 56.19%,
+    #f7a8bf 98.75%
+    ),
     linear-gradient(
       180deg,
       rgba(196, 220, 246, 0.5) -21.37%,
       rgba(255, 255, 255, 0.5) 47.33%
-    ),
-    linear-gradient(
-      178.54deg,
-      rgba(255, 213, 224, 0) 8.52%,
-      rgba(255, 212, 224, 0.657536) 56.19%,
-      #f7a8bf 98.75%
     );
   background-blend-mode: normal;
 }
@@ -34,19 +34,25 @@
   gap: 32px;
 }
 
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 @media (max-width: 900px) {
   .container {
     background: url("/main/mountains_mobile.svg") no-repeat center/cover,
+    linear-gradient(
+      178.54deg,
+      rgba(255, 213, 224, 0) 8.52%,
+      rgba(255, 212, 224, 0.657536) 56.19%,
+      #f7a8bf 98.75%
+      ),
       linear-gradient(
         180deg,
         rgba(196, 220, 246, 0.5) -21.37%,
         rgba(255, 255, 255, 0.5) 47.33%
-      ),
-      linear-gradient(
-        178.54deg,
-        rgba(255, 213, 224, 0) 8.52%,
-        rgba(255, 212, 224, 0.657536) 56.19%,
-        #f7a8bf 98.75%
       );
     background-blend-mode: normal;
   }
@@ -116,5 +122,9 @@
     letter-spacing: -5%;
     text-align: center;
     max-width: 358px;
+  }
+
+  .footer {
+    display: none;
   }
 }

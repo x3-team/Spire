@@ -29,13 +29,12 @@
   color: #fff;
   letter-spacing: -0.05em;
   background:
-  linear-gradient(
-    180deg,
-    rgba(197, 247, 227, 0.5) -78%,
-    rgba(11, 27, 71, 0) 100%
-    ),
+  linear-gradient( 180deg,  rgba(197, 247, 227, 0.3) -78%, rgba(11, 27, 71, 0) 100% ),
   linear-gradient(0deg, #0B1B47, #0B1B47);
 }
+
+/* background: linear-gradient(0deg, #0B1B47, #0B1B47),
+linear-gradient(180deg, rgba(197, 247, 227, 0.5) -78%, rgba(11, 27, 71, 0) 100%); */
 
 
 /* .button:hover {
@@ -45,7 +44,6 @@
 .button:hover {
   filter: brightness(1.05);
 }
-
 
 /* Отличия для connected */
 .connected {

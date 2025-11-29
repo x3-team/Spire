@@ -1,6 +1,8 @@
 import styles from "./Header.module.css";
 import Image from "next/image";
 import Button from "../../shared/ui/Button/Button";
+import ToggleButton from "../../shared/ui/ToggleButton/ToggleButton";
+
 import Lottie from "lottie-react";
 import animationData from "../../../public/header/animation.json";
 import { useRouter } from "next/navigation";
@@ -11,10 +13,10 @@ export function Header() {
   return (
     <div
       className={styles.container}
-      onClick={() => router.push("/")}
+      // onClick={() => router.push("/")}
       style={{ cursor: "pointer" }}
     >
-      <div className={styles.logoContainer}>
+      <div className={styles.logoContainer} onClick={() => router.push("/")}>
         <Lottie
           animationData={animationData}
           loop
@@ -31,6 +33,8 @@ export function Header() {
           priority
         />
       </div>
+
+      <ToggleButton/>
 
       <Button
         connected={true}
