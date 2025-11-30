@@ -14,8 +14,8 @@ export const VerifySuccessCard: React.FC<Props> = () => {
   const router = useRouter();
 
   return (
-    <section className={`${styles.card} ${styles.cardVerified}`}>
-      <div className={styles.cardBorder}>
+    <div className={styles.card}>
+      <section className={styles.cardBorder}>
         <div className={styles.cardSection}>
           {/* <div className={styles.checkIcon}>✓</div> */}
           <Image
@@ -37,16 +37,16 @@ export const VerifySuccessCard: React.FC<Props> = () => {
             </p>
           </div>
         </div>
-        {/* <button className={styles.primaryButton} onClick={onPrimaryClick}>
-          Mint Human NFT
-        </button> */}
-        <Button
-          connected={false}
-          address="0x7853c0b7e123c0b7"
-          onClick={() => router.push("/verify/fail")}
-          style={{ width: "100%" }}
-        />
-      </div>
+
+        <div className={styles.buttonWrapper}>
+          <Button
+            connected={false}
+            address="0x7853c0b7e123c0b7"
+            onClick={() => router.push("/verify/fail")}
+            style={{ width: "100%" }}
+          />
+        </div>
+      </section>
 
       <div className={styles.walletCard}>
         <div className={styles.walletRow}>
@@ -57,6 +57,6 @@ export const VerifySuccessCard: React.FC<Props> = () => {
           0x7853Eabb6cFa980eBfD27e3F77e69590EA53c0b7
         </div>
       </div>
-    </section>
+    </div>
   );
 };

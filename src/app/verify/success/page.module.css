@@ -3,11 +3,14 @@
   display: flex;
   justify-content: center;
   padding: 120px 16px 80px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     #c4dcf6 0%,
     #ffffff 60%
-  );
+  ); */
+  background: 
+    linear-gradient(180deg, rgba(196, 220, 246, 0.5) 0%, rgba(255, 255, 255, 0.5) 70%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
 }
 
 .content {
@@ -35,11 +38,20 @@
 }
 
 .subtitle {
-  font-family: "Work Sans", sans-serif;
+  /* font-family: "Work Sans", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 125%;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.05em; */
+
+  font-family: Work Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 125%;
+letter-spacing: -5%;
+
   color: #0b1b47;
 }
 

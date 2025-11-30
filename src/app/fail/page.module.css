@@ -2,9 +2,23 @@
   min-height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
-  padding: 120px 16px 80px;
-  background:
-    linear-gradient(180deg, #c4dcf6 0%, #ffffff 50%, #ffe5f1 100%);
+  padding: 120px 16px 16px;
+  background: linear-gradient(
+      180deg,
+      rgba(189, 194, 247, 0.5) -16.5%,
+      rgba(255, 255, 255, 0.5) 75.77%
+    ),
+    /* linear-gradient(0deg, #FFFFFF, #FFFFFF), */
+      linear-gradient(
+        180deg,
+        rgba(255, 212, 224, 0) 67.94%,
+        rgba(255, 213, 224, 0.3) 100%
+      );
+  height: 100vh;
+}
+
+.logo {
+  margin: 12px;
 }
 
 .content {
@@ -13,24 +27,40 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  justify-content: space-between;
+  height: 100%;
+  /* gap: 48px; */
   align-items: center;
 }
 
 /* карточка ошибки */
 
-.card {
-  width: 100%;
-  max-width: 520px;
+.cardBorder {
+  /* background: linear-gradient(180deg, #ffe1ea 0%, #ffffff 80%); */
+
+  background: linear-gradient(180deg, #fedde6 0%, rgba(254, 221, 230, 0) 50.19%),
+    linear-gradient(0deg, #ffffff, #ffffff);
+
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* width: 100%; */
+  /* max-width: 520px; */
   border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0px 20px 40px rgba(2, 25, 79, 0.08);
-  background: #ffffff;
+  /* overflow: hidden; */
+  border: 1px solid #0b1b4733;
+  border-radius: 4px;
+  position: relative;
+  overflow: visible;
+  height: 320px;
 }
 
-.cardTop {
-  padding: 24px 32px 24px;
-  background: linear-gradient(180deg, #ffe1ea 0%, #ffffff 80%);
+.cardSection {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 270px;
+  /* background: linear-gradient(180deg, #ffe1ea 0%, #ffffff 80%); */
 }
 
 .closeIcon {
@@ -39,23 +69,46 @@
   margin-bottom: 16px;
 }
 
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .title {
-  font-family: "Concrette S TRIAL", sans-serif;
+  /* font-family: "Concrette S TRIAL", sans-serif; */
+  /* font-weight: 500; */
+  /* font-size: 24px; */
+  /* line-height: 125%; */
+  /* margin-bottom: 8px; */
+
+  font-family: Concrette S TRIAL;
   font-weight: 500;
+  font-style: Medium;
   font-size: 24px;
-  line-height: 125%;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: -2%;
   color: #0b1b47;
-  margin-bottom: 8px;
 }
 
 .subtitle {
-  font-family: "Work Sans", sans-serif;
+  /* font-family: "Work Sans", sans-serif;
   font-size: 14px;
-  line-height: 140%;
-  color: #4b587c;
+  line-height: 140%; */
+
+  font-family: Work Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 125%;
+  letter-spacing: -5%;
+  color: #0b1b47;
+  opacity: 50%;
 }
 
-.primaryButton {
+/* .primaryButton {
   width: 100%;
   padding: 16px 18px;
   border: none;
@@ -67,6 +120,18 @@
   font-weight: 500;
   letter-spacing: -0.05em;
   cursor: pointer;
+} */
+
+.buttonWrapper {
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  width: calc(100% + 2px);
+  bottom: -1px;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  pointer-events: auto;
 }
 
 /* FAQ */
@@ -76,34 +141,69 @@
   max-width: 520px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  /* gap: 12px; */
 }
 
 .faqTitle {
-  font-family: "Concrette S TRIAL", sans-serif;
+  /* font-family: "Concrette S TRIAL", sans-serif; */
+  /* font-size: 24px; */
+  /* margin-bottom: 4px; */
+
+  font-family: Concrette S TRIAL;
+  font-weight: 500;
+  font-style: Medium;
   font-size: 24px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: -2%;
   color: #0b1b47;
-  margin-bottom: 4px;
+  padding: 18px;
+}
+
+.faqClass {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .faqItem {
-  background: rgba(244, 246, 251, 0.8);
-  border-radius: 4px;
-  padding: 14px 16px;
+  background: #0b1b4708;
+  /* border-radius: 4px; */
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .faqQuestion {
-  font-family: "Concrette S TRIAL", sans-serif;
+  /* font-family: "Concrette S TRIAL", sans-serif; */
+  /* font-size: 14px; */
+  /* margin-bottom: 4px; */
+
+  font-family: Work Sans;
+  font-weight: 500;
+  font-style: Medium;
   font-size: 14px;
+  leading-trim: NONE;
+  line-height: 125%;
+  letter-spacing: -5%;
   color: #0b1b47;
-  margin-bottom: 4px;
 }
 
 .faqAnswer {
-  font-family: "Work Sans", sans-serif;
-  font-size: 13px;
-  line-height: 140%;
-  color: #4b587c;
+  /* font-family: "Work Sans", sans-serif; */
+  /* font-size: 13px; */
+  /* line-height: 140%; */
+
+  font-family: Work Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 125%;
+  letter-spacing: -5%;
+  color: #0b1b47;
+  opacity: 50%;
 }
 
 /* мобилка */
@@ -113,7 +213,7 @@
     padding: 96px 16px 40px;
   }
 
-  .cardTop {
+  .cardSection {
     padding: 20px 20px 18px;
   }
 

@@ -1,16 +1,24 @@
 .page {
   min-height: calc(100vh - 80px);
-  /* max-width: 480px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 120px 16px; */
-  background: linear-gradient(180deg, #c4dcf6 0%, #ffffff 40%, #ffe5f1 100%);
+  background: linear-gradient(
+      180deg,
+      rgba(196, 220, 246, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 70%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 25.69%,
+      rgba(255, 248, 193, 0.2) 62.35%,
+      rgba(255, 213, 224, 0.3) 84.19%,
+      rgba(255, 203, 255, 0.4) 100%
+    );
 }
 
 .content {
   width: 100%;
-  /* max-width: 960px; */
   max-width: 480px;
   margin: 0 auto;
   display: flex;
@@ -19,10 +27,9 @@
 
 .card {
   width: 100%;
-  /* max-width: 640px; */
-  /* background: #ffffff; */
-  border-radius: 4px;
-  box-shadow: 0px 20px 40px rgba(2, 25, 79, 0.08);
+  max-width: 640px;
+  border-radius: 2px;
+  /* box-shadow: 0px 20px 40px rgba(2, 25, 79, 0.08); */
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -30,7 +37,7 @@
 }
 
 .topText {
-  padding: 32px;
+  padding: 16px;
   background: url("/mint/diamond.svg") center/cover no-repeat;
   width: 480px;
   height: 400px;
@@ -40,16 +47,15 @@
   width: 480px;
   height: 400px;
   background: url("/mint/diamond.svg") center/cover no-repeat;
-  margin: 0 auto; /* чтобы было по центру */
-  border: 1px solid #d0d0d0; /* рамка если нужна */
+  margin: 0 auto;
+  border: 1px solid #d0d0d0;
 }
 
 /* верхняя зона с текстом и иллюстрацией */
 
 .cardTop {
-  padding: 32px 32px 240px; /* верхний текст + пространство под изображение */
+  padding: 32px 32px 240px;
   background: url("/mint/diamond.svg") bottom right/contain no-repeat;
-  /* linear-gradient(180deg, #f5f6ff 0%, #e4ffe8 100%); */
 }
 
 .textBlock {
@@ -67,10 +73,13 @@
 }
 
 .subtitle {
-  font-family: "Work Sans", sans-serif;
+  font-family: Work Sans;
+  font-weight: 500;
+  font-style: Medium;
   font-size: 14px;
-  line-height: 140%;
-  color: #4b587c;
+  leading-trim: NONE;
+  line-height: 125%;
+  letter-spacing: -5%;
 }
 
 .imageWrapper {
@@ -85,18 +94,30 @@
   height: auto;
 }
 
-/* баннер и кнопка снизу */
-
 .verifiedBanner {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  background: #c5f7e380;
+  border-radius: 2px;
+
+}
+
+.verified {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #e1ffe9;
   padding: 12px 20px;
-  font-family: "Work Sans", sans-serif;
+  font-family: Work Sans;
+  font-weight: 500;
+  font-style: Medium;
   font-size: 14px;
-  color: #0b1b47;
+  leading-trim: NONE;
+  line-height: 125%;
+  letter-spacing: -5%;
+  color: #006a40;
 }
+
 
 .shieldIcon {
   font-size: 16px;
@@ -114,8 +135,6 @@
   letter-spacing: -0.05em;
   cursor: pointer;
 }
-
-/* мобильная версия */
 
 @media (max-width: 900px) {
   .page {
@@ -150,8 +169,8 @@
     height: 280px;
     padding: 24px 20px;
     /* border: ; */
-     border: 1px solid #0B1B47;
-    border-radius: 4px;
+    border: 1px solid #0b1b47;
+    border-radius: 2px;
   }
 
   .title {

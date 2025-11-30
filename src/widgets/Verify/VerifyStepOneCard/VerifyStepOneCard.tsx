@@ -36,11 +36,9 @@ export const VerifyStepOneCard: React.FC<Props> = () => {
             </p>
           </div>
         </div>
-        {/* <button className={styles.primaryButton} onClick={onPrimaryClick}>
-          Verify your humanity
-        </button> */}
-        <Button connected={false} address="0x7853c0b7e123c0b7" onClick={() => router.push("/verify/success")} />
-        
+        <div className={styles.buttonWrapper}>
+          <Button connected={false} address="0x7853c0b7e123c0b7" onClick={() => router.push("/verify/success")} />
+        </div>
       </div>
 
       <div className={styles.walletCard}>

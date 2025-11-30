@@ -3,11 +3,15 @@
   display: flex;
   justify-content: center;
   padding: 120px 16px 80px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     #c4dcf6 0%,
     #ffffff 60%
-  );
+  ); */
+  background: 
+    linear-gradient(180deg, rgba(189, 194, 247, 0.5) -16.5%, rgba(255, 255, 255, 0.5) 75.77%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+
 }
 
 .content {

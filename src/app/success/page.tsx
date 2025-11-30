@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import { Header, Footer } from "../../widgets";
 import Button from "@/src/shared/ui/Button/Button";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function MintSuccessPage() {
   const router = useRouter();
@@ -23,7 +24,7 @@ export default function MintSuccessPage() {
                 NFT is minted!
               </h1>
               <p className={styles.subtitle}>
-                It will take a few minutes for the NFT to mint and appear in
+                It will take a few minutes for the NFT <br /> to mint and appear in
                 your wallet
               </p>
             </div>
@@ -31,14 +32,29 @@ export default function MintSuccessPage() {
             {/* <div className={styles.imageBlock}></div> */}
 
             <div className={styles.verifiedBanner}>
-              <span>Your identity has been verified using zkPassport</span>
-              <span className={styles.shieldIcon}>🛡</span>
+              <div className={styles.verified}>
+                <span>Your identity has been verified using zkPassport</span>
+                {/* <span className={styles.shieldIcon}>🛡</span> */}
+                <Image
+                  src="/mint/green_icon.svg"
+                  alt="green_icon"
+                  width={16.19999885559082}
+                  height={16.19999885559082}
+                  className={styles.logo}
+                  priority
+                />
+              </div>
+              {/* green_icon.svg */}
+              <Button
+                connected={false}
+                address="0x7853c0b7e123c0b7"
+                onClick={() => router.push("/fail")}
+              />
             </div>
 
             {/* <button className={styles.primaryButton}>
               Try to mint another to see Human NFT’s Sybil resistance in action
             </button> */}
-              <Button connected={false} address="0x7853c0b7e123c0b7" onClick={() => router.push("/fail")} />
           </section>
         </div>
       </main>
