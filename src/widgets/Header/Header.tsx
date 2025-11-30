@@ -14,7 +14,7 @@ export function Header() {
     <div
       className={styles.container}
       // onClick={() => router.push("/")}
-      style={{ cursor: "pointer" }}
+      // style={{ cursor: "pointer" }}
     >
       <div className={styles.logoContainer} onClick={() => router.push("/")}>
         <Lottie

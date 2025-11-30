@@ -25,6 +25,10 @@
   height: 320px;
 }
 
+.logo {
+  margin: 12px;
+}
+
 /* Кнопка выходит за нижний бордер карточки */
 .buttonWrapper {
   position: absolute;

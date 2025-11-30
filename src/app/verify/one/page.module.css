@@ -38,12 +38,23 @@
 }
 
 .subtitle {
-  font-family: "Work Sans", sans-serif;
+  /* font-family: "Work Sans", sans-serif; */
+  /* font-weight: 500; */
+  /* font-size: 14px; */
+  /* line-height: 125%; */
+  /* letter-spacing: -0.05em; */
+  
+  font-family: Work Sans;
   font-weight: 500;
+  font-style: Medium;
   font-size: 14px;
+  leading-trim: NONE;
   line-height: 125%;
-  letter-spacing: -0.05em;
+  letter-spacing: -5%;
+  text-align: center;
   color: #0b1b47;
+
+
 }
 
 /* карточка */

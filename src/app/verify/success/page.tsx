@@ -4,9 +4,9 @@ import styles from "./page.module.css";
 import {
   Header,
   Footer,
-  VerifyStepOneCard,
+  // VerifyStepOneCard,
   VerifySuccessCard,
-  VerifyErrorCard,
+  // VerifyErrorCard,
 } from "../../../widgets";
 
 export default function VerifyPageSuccess() {

@@ -45,13 +45,12 @@
   letter-spacing: -0.05em; */
 
   font-family: Work Sans;
-font-weight: 500;
-font-style: Medium;
-font-size: 14px;
-leading-trim: NONE;
-line-height: 125%;
-letter-spacing: -5%;
-
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 125%;
+  letter-spacing: -5%;
   color: #0b1b47;
 }
 
