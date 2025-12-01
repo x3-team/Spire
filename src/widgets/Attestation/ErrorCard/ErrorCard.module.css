@@ -189,3 +189,21 @@
   letter-spacing: -0.05em;
   color: #aa002f;
 }
+
+
+
+@media (max-width: 767px) {
+  .card {
+    /* max-width: 100%; */
+    /* padding: 24px 20px 24px; */
+    max-width: 358px;
+  }
+
+  .cardBorder {
+    height: 280px;
+  }
+
+  .cardSection {
+  height: 230px;
+}
+}

@@ -1,6 +1,6 @@
 .page {
-  min-height: calc(100vh - 80px); /* примерно, под твой Header/Footer */
-  display: flex;
+  /* min-height: calc(100vh - 80px);  */
+  min-height: 100vh;
   justify-content: center;
   padding: 120px 16px 80px;
   /* background: linear-gradient(
@@ -152,7 +152,7 @@
 
 /* мобильная адаптация */
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   .page {
     padding: 144px 16px 40px;
   }

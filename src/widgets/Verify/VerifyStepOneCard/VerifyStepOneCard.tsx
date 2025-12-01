@@ -37,7 +37,7 @@ export const VerifyStepOneCard: React.FC<Props> = () => {
           </div>
         </div>
         <div className={styles.buttonWrapper}>
-          <Button connected={false} address="0x7853c0b7e123c0b7" onClick={() => router.push("/verify/success")} />
+          <Button connected={false} address="0x7853c0b7e123c0b7" onClick={() => router.push("/verify/success")} children="Verify your humanity " />
         </div>
       </div>
 

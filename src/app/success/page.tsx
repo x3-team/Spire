@@ -17,7 +17,11 @@ export default function MintSuccessPage() {
           <section className={styles.card}>
             <div className={styles.topText}>
               <h1 className={styles.title}>
-                <p className={styles.desktopText}>Success!<br />“I am human”</p>
+                <p className={styles.desktopText}>
+                  Success!
+                  <br />
+                  “I am human”
+                </p>
                 <p className={styles.mobileText}>Success! “I am human”</p>
                 <p>NFT is minted!</p>
               </h1>
@@ -47,6 +51,7 @@ export default function MintSuccessPage() {
                 connected={false}
                 address="0x7853c0b7e123c0b7"
                 onClick={() => router.push("/fail")}
+                children="Try to mint another to see Human NFT's Sybil resistance in action"
               />
             </div>
 

@@ -1,3 +1,4 @@
+
 export { HeaderMain } from './Header/HeaderMain/HeaderMain';
 export { HeaderHuman } from './Header/HeaderChange/HeaderHuman';
 export { HeaderCelo } from './Header/HeaderChange/HeaderCelo';
@@ -12,3 +13,4 @@ export { SuccessCard } from './Attestation/SuccessCard/SuccessCard';
 export { ErrorCard } from './Attestation/ErrorCard/ErrorCard';
 
 export { Footer } from './Footer/Footer';
+export { FooterAttestation } from './Footer/FooterAttestation';

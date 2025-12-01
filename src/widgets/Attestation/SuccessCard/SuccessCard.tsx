@@ -55,6 +55,7 @@ export const SuccessCard = () => {
               address="0x7853c0b7e123c0b7"
               onClick={() => router.push("/attestation/fail")}
               style={{ width: "100%" }}
+              children="Go to Human Appchain"
             />
           </div>
         </section>

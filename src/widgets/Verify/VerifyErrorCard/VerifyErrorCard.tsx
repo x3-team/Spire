@@ -36,6 +36,7 @@ export const VerifyErrorCard = () => {
           connected={false}
           address="0x7853c0b7e123c0b7"
           onClick={() => router.push("/attestation/one")}
+          children="Try again to Verify your Humanity"
         />
       </div>
 

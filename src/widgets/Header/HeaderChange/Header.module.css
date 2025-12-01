@@ -31,7 +31,7 @@
   justify-self: end;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   .headerGrid {
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;

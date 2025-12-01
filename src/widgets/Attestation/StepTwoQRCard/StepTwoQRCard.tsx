@@ -59,6 +59,7 @@ export const StepTwoQRCard = () => {
           connected={false}
           address="0x7853c0b7e123c0b7"
           onClick={() => router.push("/attestation/success")}
+          children="Generate Address Proof Signature"
         />
       </div>
 

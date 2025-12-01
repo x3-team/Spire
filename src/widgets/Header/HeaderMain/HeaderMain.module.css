@@ -16,7 +16,7 @@
   gap: 7px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   .lottie {
     width: 28.1px !important;
     height: 28.25px !important;

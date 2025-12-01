@@ -180,3 +180,20 @@
   color: #0b1b47;
   opacity: 40%;
 }
+
+
+@media (max-width: 767px) {
+  .card {
+    /* max-width: 100%; */
+    /* padding: 24px 20px 24px; */
+    max-width: 358px;
+  }
+
+  .cardBorder {
+    height: 280px;
+  }
+
+  .cardSection {
+  height: 230px;
+}
+}

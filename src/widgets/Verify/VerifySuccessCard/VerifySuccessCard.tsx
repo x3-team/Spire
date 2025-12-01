@@ -44,6 +44,7 @@ export const VerifySuccessCard: React.FC<Props> = () => {
             address="0x7853c0b7e123c0b7"
             onClick={() => router.push("/verify/fail")}
             style={{ width: "100%" }}
+            children="Mint Human NFT"
           />
         </div>
       </section>

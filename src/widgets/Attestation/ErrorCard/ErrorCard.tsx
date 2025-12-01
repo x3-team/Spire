@@ -73,6 +73,7 @@ export const ErrorCard = () => {
               connected={false}
               address="0x7853c0b7e123c0b7"
               onClick={() => router.push("/success")}
+              children="Check your Verification Status"
             />
           </div>
         </div>

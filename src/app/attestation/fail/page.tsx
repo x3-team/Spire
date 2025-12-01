@@ -3,7 +3,7 @@
 import styles from "./page.module.css";
 import {
   HeaderCelo,
-  Footer,
+  FooterAttestation,
   // StepOneCard,
   // StepTwoQRCard,
   // SuccessCard,
@@ -29,7 +29,7 @@ export default function AttestationPageFail() {
           <ErrorCard />
         </div>
       </main>
-      <Footer />
+      <FooterAttestation />
     </>
   );
 }

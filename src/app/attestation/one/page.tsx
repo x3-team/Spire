@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./page.module.css";
-import { HeaderCelo, Footer, StepOneCard, StepTwoQRCard, SuccessCard, ErrorCard } from "../../../widgets";
+import { HeaderCelo, FooterAttestation, StepOneCard, StepTwoQRCard, SuccessCard, ErrorCard } from "../../../widgets";
 
 export default function AttestationPageOne() {
   return (
@@ -24,7 +24,7 @@ export default function AttestationPageOne() {
           {/* <ErrorCard /> */}
         </div>
       </main>
-      <Footer />
+      <FooterAttestation />
     </>
   );
 }

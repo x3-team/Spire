@@ -157,7 +157,7 @@
 }
 
 /* мобилка, если нужно отдельно для карточки */
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   .card {
     /* max-width: 100%; */
     /* padding: 24px 20px 24px; */

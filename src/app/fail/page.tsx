@@ -44,6 +44,7 @@ export default function MintFailPage() {
                 connected={false}
                 address="0x7853c0b7e123c0b7"
                 onClick={() => router.push("/")}
+                children="Back to Human Appchain"
               />
             </div>
           </section>
