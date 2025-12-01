@@ -9,7 +9,7 @@ import { useEffect } from "react";
 import { useAccount } from "wagmi";
 import { ConnectButton, useConnectModal } from "@rainbow-me/rainbowkit";
 
-// import { getDefaultConfig, RainbowKitProvider, ConnectButton } from '@rainbow-me/rainbowkit';
+import buttonStyles from "../shared/ui/Button/Button.module.css";
 // import { WagmiProvider } from 'wagmi';
 // import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 // import { mainnet, polygon, optimism, arbitrum, base } from 'wagmi/chains';
@@ -51,10 +51,38 @@ export default function HomePage() {
             address={address}
             onClick={handleClick}
           /> */}
-          <ConnectButton />
+          {/* <ConnectButton/> */}
+          <ConnectButton.Custom>
+            {({ account, chain, openConnectModal, openAccountModal, openChainModal, mounted }) => {
+              const ready = mounted;
+              const connected = ready && account && chain;
+              return (
+                <button
+                  className={connected ? buttonStyles.connected : buttonStyles.button}
+                  type="button"
+                  onClick={() => {
+                    if (!connected) {
+                      openConnectModal && openConnectModal();
+                    } else {
+                      openAccountModal && openAccountModal();
+                    }
+                  }}
+                >
+                  {connected ? (
+                    <>
+                      <span className={buttonStyles.connectedText}>Connected Wallet</span>
+                      <span className={buttonStyles.address}>{account?.displayName}</span>
+                    </>
+                  ) : (
+                    "Connect Wallet"
+                  )}
+                </button>
+              );
+            }}
+
+          </ConnectButton.Custom>
         </div>
       </div>
-
       <div className={styles.footer}>
         <Footer />
       </div>

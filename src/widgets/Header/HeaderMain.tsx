@@ -35,8 +35,18 @@ export function HeaderMain() {
       <Button
         connected={false}
         address="0x7853c0b7e123c0b7"
-        onClick={() => router.push("/verify/one")} 
-        style={{ width: 270, height: 42 }}
+        onClick={() => router.push("/verify/one")}
+        style={{
+          width: 140,
+          height: 42,
+          fontFamily: "Work Sans",
+          fontWeight: 500,
+          fontStyle: "normal",
+          fontSize: 14,
+          lineHeight: 1.25,
+          letterSpacing: "-0.05em",
+          textAlign: "center"
+        }}
       />
     </div>
   );
