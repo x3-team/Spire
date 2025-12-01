@@ -1,4 +1,3 @@
-
 .container {
   display: flex;
   justify-content: space-between;
@@ -35,11 +34,10 @@
   margin-top: 24px;
 }
 
-/* Мобильная версия */
 @media (max-width: 900px) {
   .container {
     flex-direction: column;
-    align-items: stretch; /* растягиваем по ширине */
+    align-items: stretch;
     gap: 12px;
     padding: 16px 16px;
   }
@@ -55,9 +53,9 @@
   }
 
   .toggleButton {
-    align-self: center; /* ← вот оно! */
-    width: auto; /* не на всю ширину */
-    max-width: 300px; /* ограничим ширину, как на макете */
+    align-self: center;
+    width: auto;
+    max-width: 300px;
     margin-top: 12px;
   }
 

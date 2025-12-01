@@ -25,13 +25,13 @@ export default function HomePage() {
     }
   }, [isConnected, router]);
 
-  const handleClick = () => {
-    if (!isConnected && openConnectModal) {
-      openConnectModal();
-    } else {
-      router.push("/verify/one");
-    }
-  };
+  // const handleClick = () => {
+  //   if (!isConnected && openConnectModal) {
+  //     openConnectModal();
+  //   } else {
+  //     router.push("/verify/one");
+  //   }
+  // };
 
   return (
     <>

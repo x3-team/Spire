@@ -13,7 +13,6 @@ export const VerifyErrorCard = () => {
       <div className={styles.alert}>
         <div className={styles.alertBlock}>
           <div className={styles.alertHeader}>
-            {/* <span className={styles.alertIcon}>✕</span> */}
             <Image
               src="/verify/check_fail.svg"
               alt="logo"

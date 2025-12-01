@@ -17,11 +17,6 @@
   cursor: pointer;
 }
 
-.button {
-  /* margin-top: 12px; */
-  /* height: 42px; */
-}
-
 @media (max-width: 900px) {
   .lottie {
     width: 28.1px !important;
