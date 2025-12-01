@@ -2,7 +2,7 @@
 
 import styles from "./page.module.css";
 import {
-  Header,
+  HeaderCelo,
   Footer,
   // StepOneCard,
   // StepTwoQRCard,
@@ -13,7 +13,7 @@ import {
 export default function AttestationPageFail() {
   return (
     <>
-      <Header />
+      <HeaderCelo />
       <main className={styles.page}>
         <div className={styles.content}>
           <div className={styles.heading}>

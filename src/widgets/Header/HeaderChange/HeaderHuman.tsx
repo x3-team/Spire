@@ -1,18 +1,22 @@
 import styles from "./Header.module.css";
 import Image from "next/image";
 import Button from "../../../shared/ui/Button/Button";
-import ToggleButton from "../../../shared/ui/ToggleButton/ToggleButton";
-
+// import ToggleButton from "../../shared/ui/ToggleButton/ToggleButton";
 import Lottie from "lottie-react";
 import animationData from "../../../../public/header/animation.json";
 import { useRouter } from "next/navigation";
+// import ToggleButton from "@/src/shared/ui/ToggleButton/ToggleButton";
+import { NetworkToggle } from "@/src/shared/ui/ToggleButton/NetworkToggle";
 
-export function Header() {
+// NetworkToggle
+// ToggleButton
+
+export function HeaderHuman() {
   const router = useRouter();
 
   return (
     <div className={styles.container}>
-      <div className={styles.headerRow}>
+      <div className={styles.headerGrid}>
         <div className={styles.logoContainer} onClick={() => router.push("/")}>
           <Lottie
             animationData={animationData}
@@ -30,7 +34,14 @@ export function Header() {
             priority
           />
         </div>
-        <div className={styles.walletContainer}>
+
+        <div className={styles.toggleContainer}>
+          {/* <ToggleButton/> */}
+          <NetworkToggle value="human"/>
+          
+        </div>
+
+        <div className={styles.buttonContainer}>
           <Button
             connected={true}
             address="0x7853c0b7e123c0b7"
@@ -38,9 +49,6 @@ export function Header() {
             style={{ width: 270, height: 42 }}
           />
         </div>
-      </div>
-      <div className={styles.toggleWrapper}>
-        <ToggleButton />
       </div>
     </div>
   );

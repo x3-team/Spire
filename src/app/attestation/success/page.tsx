@@ -1,12 +1,12 @@
 "use client";
 
 import styles from "./page.module.css";
-import { Header, Footer, StepOneCard, StepTwoQRCard, SuccessCard, ErrorCard } from "../../../widgets";
+import { HeaderCelo, Footer, StepOneCard, StepTwoQRCard, SuccessCard, ErrorCard } from "../../../widgets";
 
 export default function AttestationPageSuccess() {
   return (
     <>
-      <Header />
+      <HeaderCelo />
       <main className={styles.page}>
         <div className={styles.content}>
           <div className={styles.heading}>

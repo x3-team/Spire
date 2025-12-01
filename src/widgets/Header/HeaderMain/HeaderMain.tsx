@@ -1,8 +1,8 @@
-import styles from "./Header.module.css";
+import styles from "./HeaderMain.module.css";
 import Image from "next/image";
-import Button from "../../shared/ui/Button/Button";
+import Button from "../../../shared/ui/Button/Button";
 import Lottie from "lottie-react";
-import animationData from "../../../public/header/animation.json";
+import animationData from "../../../../public/header/animation.json";
 import { useRouter } from "next/navigation";
 
 export function HeaderMain() {

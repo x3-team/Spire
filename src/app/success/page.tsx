@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./page.module.css";
-import { Header, Footer } from "../../widgets";
+import { HeaderHuman, Footer } from "../../widgets";
 import Button from "@/src/shared/ui/Button/Button";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -11,7 +11,7 @@ export default function MintSuccessPage() {
 
   return (
     <>
-      <Header />
+      <HeaderHuman />
       <main className={styles.page}>
         <div className={styles.content}>
           <section className={styles.card}>

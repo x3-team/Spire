@@ -2,7 +2,7 @@
 
 import styles from "./page.module.css";
 import {
-  Header,
+  HeaderHuman,
   Footer,
   // VerifyStepOneCard,
   VerifySuccessCard,
@@ -12,7 +12,7 @@ import {
 export default function VerifyPageSuccess() {
   return (
     <>
-      <Header />
+      <HeaderHuman />
       <main className={styles.page}>
         <div className={styles.content}>
           <div className={styles.heading}>

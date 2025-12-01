@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import '@rainbow-me/rainbowkit/styles.css';
 // import Button from "../shared/ui/Button/Button";
 import { Footer, HeaderMain } from "../widgets";
+
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { useAccount } from "wagmi";
@@ -16,7 +17,7 @@ import buttonStyles from "../shared/ui/Button/Button.module.css";
 
 export default function HomePage() {
   const router = useRouter();
-  const { openConnectModal } = useConnectModal();
+  // const { openConnectModal } = useConnectModal();
   const { isConnected, address } = useAccount();
 
   useEffect(() => {

@@ -1,13 +1,13 @@
 "use client";
 
 import styles from "./page.module.css";
-import { Header, Footer, VerifyErrorCard } from "../../../widgets";
+import { HeaderHuman, Footer, VerifyErrorCard } from "../../../widgets";
 
 export default function VerifyPageFail() {
 
   return (
     <>
-      <Header />
+      <HeaderHuman />
       <main className={styles.page}>
         <div className={styles.content}>
           <div className={styles.heading}>

@@ -1,12 +1,14 @@
 "use client";
 
 import styles from "./page.module.css";
-import { Header, Footer, VerifyStepOneCard } from "../../../widgets";
+import { HeaderHuman, Footer, VerifyStepOneCard } from "../../../widgets";
+// import { HeaderHuman } from "@/src/widgets/Header/HeaderChange/HeaderHuman";
 
+// HeaderHuman
 export default function VerifyPageOne() {
   return (
     <>
-      <Header />
+      <HeaderHuman />
       <main className={styles.page}>
         <div className={styles.content}>
           <div className={styles.heading}>
