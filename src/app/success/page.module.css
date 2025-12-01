@@ -27,7 +27,7 @@
 
 .card {
   width: 100%;
-  max-width: 640px;
+  /* max-width: 640px; */
   border-radius: 2px;
   /* box-shadow: 0px 20px 40px rgba(2, 25, 79, 0.08); */
   display: flex;
