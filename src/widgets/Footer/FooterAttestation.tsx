@@ -3,9 +3,6 @@ import styles from "./FooterAttestation.module.css";
 export function FooterAttestation() {
   return (
     <div className={styles.container}>
-      {/* <div > */}
-
-      {/* <div className={styles.proofText}> */}
       <div className={styles.desktopText}>
         <div className={styles.left}>Contract Address: 0x505a5CC..f711a8</div>
         <div className={styles.center}>
@@ -21,8 +18,6 @@ export function FooterAttestation() {
           on-chain to verify your humanity.
         </div>
       </div>
-      {/* </div> */}
-      {/* </div> */}
     </div>
   );
 }

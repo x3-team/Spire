@@ -1,14 +1,8 @@
 .page {
-  /* min-height: calc(100vh - 80px);  */
   min-height: 100vh;
   display: flex;
   justify-content: center;
   padding: 120px 16px 80px;
-  /* background: linear-gradient(
-    180deg,
-    #c4dcf6 0%,
-    #ffffff 60%
-  ); */
   background: linear-gradient(
       180deg,
       rgba(196, 220, 246, 0.5) 0%,
@@ -40,16 +34,9 @@
   line-height: 90%;
   letter-spacing: -0.02em;
   color: #0b1b47;
-  /* margin-bottom: 8px; */
 }
 
 .subtitle {
-  /* font-family: "Work Sans", sans-serif; */
-  /* font-weight: 500; */
-  /* font-size: 14px; */
-  /* line-height: 125%; */
-  /* letter-spacing: -0.05em; */
-
   font-family: Work Sans;
   font-weight: 500;
   font-style: Medium;
@@ -60,8 +47,6 @@
   text-align: center;
   color: #0b1b47;
 }
-
-/* карточка */
 
 .card {
   width: 100%;
@@ -152,7 +137,6 @@
   color: #0b1b47;
 }
 
-/* мобильная адаптация */
 
 @media (max-width: 767px) {
   .page {
@@ -161,26 +145,6 @@
 
   .title {
     font-size: 28px;
-
-    /* font-family: Concrette S TRIAL; */
-    /* font-weight: 500; */
-    /* font-style: Medium; */
-    /* font-size: 28px; */
-    /* leading-trim: NONE; */
-    /* line-height: 90%; */
-    /* letter-spacing: -2%; */
-    /* text-align: center; */
-  }
-
-  .subtitle {
-    /* font-family: Work Sans; */
-    /* font-weight: 500; */
-    /* font-style: Medium; */
-    /* font-size: 14px; */
-    /* leading-trim: NONE; */
-    /* line-height: 125%; */
-    /* letter-spacing: -0.05em; */
-    /* text-align: center; */
   }
 
   .card {

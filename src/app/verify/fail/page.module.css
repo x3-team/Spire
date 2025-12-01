@@ -1,10 +1,8 @@
 .page {
-  /* min-height: calc(100vh - 80px); */
   min-height: 100vh;
   justify-content: center;
   padding: 120px 16px 80px;
-  background: 
-  /* linear-gradient(0deg, #FFFFFF, #FFFFFF), */ linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(196, 220, 246, 0.5) 0%,
       rgba(255, 255, 255, 0.5) 70%
@@ -139,8 +137,6 @@
   font-size: 12px;
   color: #0b1b47;
 }
-
-/* мобильная адаптация */
 
 @media (max-width: 767px) {
   .page {

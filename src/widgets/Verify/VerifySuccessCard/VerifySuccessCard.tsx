@@ -17,7 +17,6 @@ export const VerifySuccessCard: React.FC<Props> = () => {
     <div className={styles.card}>
       <section className={styles.cardBorder}>
         <div className={styles.cardSection}>
-          {/* <div className={styles.checkIcon}>✓</div> */}
           <Image
             src="/verify/check_success.svg"
             alt="logo"

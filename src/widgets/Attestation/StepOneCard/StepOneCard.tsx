@@ -21,7 +21,6 @@ export const StepOneCard = () => {
             You must sign a message to prove you own this address
           </div>
         </div>
-        {/* <button className={styles.primaryButton}>Generate Address Proof Signature</button> */}
         <Button
           connected={false}
           address="0x7853c0b7e123c0b7"
@@ -31,7 +30,6 @@ export const StepOneCard = () => {
       </div>
 
       <div className={styles.stepContainer}>
-        {/* Step 2. Scan QR with Self app */}
         <div className={styles.stepBlock}>
           <div className={styles.stepLast}>Step 2.</div>
           <div className={styles.stepLastStrong}>Scan QR with Self app</div>
@@ -39,7 +37,6 @@ export const StepOneCard = () => {
       </div>
 
       <div className={styles.stepContainer}>
-        {/* Step 3. Check Verification Status */}
         <div className={styles.stepBlock}>
           <div className={styles.stepLast}>Step 3.</div>
           <div className={styles.stepLastStrong}>Check Verification Status</div>

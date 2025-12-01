@@ -1,15 +1,10 @@
 import styles from "./Header.module.css";
 import Image from "next/image";
 import Button from "../../../shared/ui/Button/Button";
-// import ToggleButton from "../../shared/ui/ToggleButton/ToggleButton";
 import Lottie from "lottie-react";
 import animationData from "../../../../public/header/animation.json";
 import { useRouter } from "next/navigation";
-// import ToggleButton from "@/src/shared/ui/ToggleButton/ToggleButton";
 import { NetworkToggle } from "@/src/shared/ui/ToggleButton/NetworkToggle";
-
-// NetworkToggle
-// ToggleButton
 
 export function HeaderCelo() {
   const router = useRouter();
@@ -36,9 +31,7 @@ export function HeaderCelo() {
         </div>
 
         <div className={styles.toggleContainer}>
-          {/* <ToggleButton/> */}
-          <NetworkToggle value="celo"/>
-          
+          <NetworkToggle value="celo" />
         </div>
 
         <div className={styles.buttonContainer}>

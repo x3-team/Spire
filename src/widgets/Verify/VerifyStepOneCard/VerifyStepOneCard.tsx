@@ -17,7 +17,6 @@ export const VerifyStepOneCard: React.FC<Props> = () => {
     <section className={styles.card}>
       <div className={styles.cardBorder}>
         <div className={styles.cardSection}>
-          {/* <div className={styles.checkIcon}>✓</div> */}
           <Image
             src="/verify/check.svg"
             alt="logo"
@@ -37,7 +36,12 @@ export const VerifyStepOneCard: React.FC<Props> = () => {
           </div>
         </div>
         <div className={styles.buttonWrapper}>
-          <Button connected={false} address="0x7853c0b7e123c0b7" onClick={() => router.push("/verify/success")} children="Verify your humanity " />
+          <Button
+            connected={false}
+            address="0x7853c0b7e123c0b7"
+            onClick={() => router.push("/verify/success")}
+            children="Verify your humanity "
+          />
         </div>
       </div>
 

@@ -31,12 +31,10 @@ export default function MintSuccessPage() {
               </p>
             </div>
 
-            {/* <div className={styles.imageBlock}></div> */}
-
             <div className={styles.verifiedBanner}>
               <div className={styles.verified}>
                 <span>Your identity has been verified using zkPassport</span>
-                {/* <span className={styles.shieldIcon}>🛡</span> */}
+
                 <Image
                   src="/mint/green_icon.svg"
                   alt="green_icon"
@@ -46,7 +44,7 @@ export default function MintSuccessPage() {
                   priority
                 />
               </div>
-              {/* green_icon.svg */}
+
               <Button
                 connected={false}
                 address="0x7853c0b7e123c0b7"
@@ -54,10 +52,6 @@ export default function MintSuccessPage() {
                 children="Try to mint another to see Human NFT's Sybil resistance in action"
               />
             </div>
-
-            {/* <button className={styles.primaryButton}>
-              Try to mint another to see Human NFT’s Sybil resistance in action
-            </button> */}
           </section>
         </div>
       </main>

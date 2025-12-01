@@ -1,12 +1,18 @@
 .page {
-  /* min-height: calc(100vh - 80px); */
   min-height: 100vh;
   display: flex;
   justify-content: center;
   padding: 120px 16px 16px;
-  background:
-  linear-gradient(180deg, rgba(189, 194, 247, 0.7) -16.5%, rgba(255, 255, 255, 0.3) 75.77%),
-  linear-gradient(180deg, rgba(255, 213, 224, 0.2) 50%, rgba(255, 80, 120, 0.15) 100%);
+  background: linear-gradient(
+      180deg,
+      rgba(189, 194, 247, 0.7) -16.5%,
+      rgba(255, 255, 255, 0.3) 75.77%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 213, 224, 0.2) 50%,
+      rgba(255, 80, 120, 0.15) 100%
+    );
   height: 100vh;
 }
 
@@ -22,24 +28,13 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  /* gap: 48px; */
-  /* align-items: center; */
 }
 
-/* карточка ошибки */
-
 .cardBorder {
-  /* background: linear-gradient(180deg, #ffe1ea 0%, #ffffff 80%); */
-
   background: linear-gradient(180deg, #fedde6 0%, rgba(254, 221, 230, 0) 50.19%),
     linear-gradient(0deg, #ffffff, #ffffff);
 
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* width: 100%; */
-  /* max-width: 520px; */
   border-radius: 4px;
-  /* overflow: hidden; */
   border: 1px solid #0b1b4733;
   border-radius: 4px;
   position: relative;
@@ -53,7 +48,6 @@
   flex-direction: column;
   justify-content: space-between;
   height: 270px;
-  /* background: linear-gradient(180deg, #ffe1ea 0%, #ffffff 80%); */
 }
 
 .closeIcon {
@@ -69,12 +63,6 @@
 }
 
 .title {
-  /* font-family: "Concrette S TRIAL", sans-serif; */
-  /* font-weight: 500; */
-  /* font-size: 24px; */
-  /* line-height: 125%; */
-  /* margin-bottom: 8px; */
-
   font-family: Concrette S TRIAL;
   font-weight: 500;
   font-style: Medium;
@@ -86,10 +74,6 @@
 }
 
 .subtitle {
-  /* font-family: "Work Sans", sans-serif;
-  font-size: 14px;
-  line-height: 140%; */
-
   font-family: Work Sans;
   font-weight: 400;
   font-style: Regular;
@@ -100,20 +84,6 @@
   color: #0b1b47;
   opacity: 50%;
 }
-
-/* .primaryButton {
-  width: 100%;
-  padding: 16px 18px;
-  border: none;
-  border-radius: 0 0 4px 4px;
-  background: #0b1b47;
-  color: #ffffff;
-  font-family: "Work Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: -0.05em;
-  cursor: pointer;
-} */
 
 .buttonWrapper {
   position: absolute;
@@ -127,8 +97,6 @@
   pointer-events: auto;
 }
 
-/* FAQ */
-
 .faqSection {
   width: 100%;
   max-width: 480px;
@@ -138,10 +106,6 @@
 }
 
 .faqTitle {
-  /* font-family: "Concrette S TRIAL", sans-serif; */
-  /* font-size: 24px; */
-  /* margin-bottom: 4px; */
-
   font-family: Concrette S TRIAL;
   font-weight: 500;
   font-style: Medium;
@@ -161,7 +125,6 @@
 
 .faqItem {
   background: #0b1b4708;
-  /* border-radius: 4px; */
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -169,10 +132,6 @@
 }
 
 .faqQuestion {
-  /* font-family: "Concrette S TRIAL", sans-serif; */
-  /* font-size: 14px; */
-  /* margin-bottom: 4px; */
-
   font-family: Work Sans;
   font-weight: 500;
   font-style: Medium;
@@ -184,10 +143,6 @@
 }
 
 .faqAnswer {
-  /* font-family: "Work Sans", sans-serif; */
-  /* font-size: 13px; */
-  /* line-height: 140%; */
-
   font-family: Work Sans;
   font-weight: 400;
   font-style: Regular;
@@ -198,8 +153,6 @@
   color: #0b1b47;
   opacity: 50%;
 }
-
-/* мобилка */
 
 @media (max-width: 767px) {
   .page {

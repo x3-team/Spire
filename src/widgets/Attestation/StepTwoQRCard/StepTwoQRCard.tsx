@@ -64,7 +64,6 @@ export const StepTwoQRCard = () => {
       </div>
 
       <div className={styles.stepContainer}>
-        {/* Step 3. Check Verification Status */}
         <div className={styles.stepBlockQr}>
           <div className={styles.stepLast}>Step 3.</div>
           <div className={styles.stepLastStrong}>Check Verification Status</div>

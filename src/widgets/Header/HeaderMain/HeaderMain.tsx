@@ -9,11 +9,7 @@ export function HeaderMain() {
   const router = useRouter();
 
   return (
-    <div
-      className={styles.container}
-      // onClick={() => router.push("/")}
-      style={{ cursor: "pointer" }}
-    >
+    <div className={styles.container} style={{ cursor: "pointer" }}>
       <div className={styles.logoContainer}>
         <Lottie
           animationData={animationData}
@@ -45,7 +41,7 @@ export function HeaderMain() {
           fontSize: 14,
           lineHeight: 1.25,
           letterSpacing: "-0.05em",
-          textAlign: "center"
+          textAlign: "center",
         }}
       />
     </div>

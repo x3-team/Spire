@@ -1,17 +1,15 @@
 .page {
-  /* min-height: calc(100vh - 80px); */
-   min-height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   padding: 120px 16px 80px;
-  /* background: linear-gradient(
-    180deg,
-    #c4dcf6 0%,
-    #ffffff 60%
-  ); */
-  background:
-  linear-gradient(0deg, #FFFFFF00, #FFFFFF00),
-  linear-gradient(180deg, rgba(189, 194, 247, 0.75) -16.5%, rgba(255, 255, 255, 0.5) 75.77%);
+
+  background: linear-gradient(0deg, #ffffff00, #ffffff00),
+    linear-gradient(
+      180deg,
+      rgba(189, 194, 247, 0.75) -16.5%,
+      rgba(255, 255, 255, 0.5) 75.77%
+    );
 }
 
 .content {
@@ -46,8 +44,6 @@
   letter-spacing: -0.05em;
   color: #0b1b47;
 }
-
-/* адаптив */
 
 @media (max-width: 767px) {
   .page {
