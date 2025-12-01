@@ -4,35 +4,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 100vh;
   padding: 15px 16px 16px 16px;
-  /* height: 50px; */
-  /* border-top: 1px solid #e0e0e0; */
-}
-
-
-.footerTextGrid {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: center;
-  width: 100%;
-  gap: 8px;
-}
-
-.contractAddress {
-  
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin-bottom: 0;
   font-size: 14px;
   line-height: 125%;
   letter-spacing: -0.05em;
   color: #0b1b47;
   opacity: 0.5;
-  white-space: nowrap;
-  margin-right: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* flex-direction: row; */
+  justify-content: space-between;
 }
 
 .proofText {
@@ -44,26 +30,50 @@
   letter-spacing: -0.05em;
   color: #0b1b47;
   opacity: 0.5;
-  flex: 1;
-  width: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  /* width: 100%; */
+}
+
+.desktopText {
+  display: flex;
+  align-items: center;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  width: 100%;
+}
+
+.desktopText .left {
+  /* margin-left: 0; */
+  margin-right: auto;
+  text-align: left;
+}
+
+.desktopText .center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
-  margin: 0;
+  white-space: nowrap;
+}
+
+.mobileText {
+  display: none;
 }
 
 @media (max-width: 767px) {
-  .footerTextGrid {
+  .desktopText {
+    display: none;
+  }
+
+  .mobileText {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 4px;
-  }
-  .contractAddress {
-    white-space: normal;
-    margin-right: 0;
     text-align: center;
-  }
-  .proofText {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 }
