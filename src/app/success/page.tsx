@@ -17,15 +17,13 @@ export default function MintSuccessPage() {
           <section className={styles.card}>
             <div className={styles.topText}>
               <h1 className={styles.title}>
-                Success!
-                <br />
-                “I am human”
-                <br />
-                NFT is minted!
+                <p className={styles.desktopText}>Success!<br />“I am human”</p>
+                <p className={styles.mobileText}>Success! “I am human”</p>
+                <p>NFT is minted!</p>
               </h1>
               <p className={styles.subtitle}>
-                It will take a few minutes for the NFT <br /> to mint and appear in
-                your wallet
+                It will take a few minutes for the NFT <br /> to mint and appear
+                in your wallet
               </p>
             </div>
 

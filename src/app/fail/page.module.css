@@ -103,7 +103,7 @@
   font-size: 14px;
   leading-trim: NONE;
   line-height: 125%;
-  letter-spacing: -5%;
+  letter-spacing: -0.05em;
   color: #0b1b47;
   opacity: 50%;
 }
@@ -186,7 +186,7 @@
   font-size: 14px;
   leading-trim: NONE;
   line-height: 125%;
-  letter-spacing: -5%;
+  letter-spacing: -0.05em;
   color: #0b1b47;
 }
 
@@ -201,7 +201,7 @@
   font-size: 14px;
   leading-trim: NONE;
   line-height: 125%;
-  letter-spacing: -5%;
+  letter-spacing: -0.05em;
   color: #0b1b47;
   opacity: 50%;
 }

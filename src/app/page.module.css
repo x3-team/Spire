@@ -113,13 +113,13 @@
   .subtitle {
     font-size: 14px;
     line-height: 125%;
-    letter-spacing: -5%;
+    letter-spacing: -0.05em;
     text-align: center;
   }
   .button {
     font-size: 14px;
     line-height: 125%;
-    letter-spacing: -5%;
+    letter-spacing: -0.05em;
     text-align: center;
     max-width: 358px;
   }

@@ -40,7 +40,7 @@
   font-size: 14px;
   leading-trim: NONE;
   line-height: 125%;
-  letter-spacing: -5%;
+  letter-spacing: -0.05em;
   color: #aa002f;
 }
 
@@ -51,7 +51,7 @@
   font-size: 14px;
   leading-trim: NONE;
   line-height: 125%;
-  letter-spacing: -5%;
+  letter-spacing: -0.05em;
   color: #aa002f;
   opacity: 50%;
   white-space: nowrap;

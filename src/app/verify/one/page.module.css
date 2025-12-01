@@ -22,8 +22,10 @@
   gap: 32px;
   align-items: center;
 }
-
 .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   text-align: center;
 }
 
@@ -34,7 +36,7 @@
   line-height: 90%;
   letter-spacing: -0.02em;
   color: #0b1b47;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 .subtitle {
@@ -50,7 +52,7 @@
   font-size: 14px;
   leading-trim: NONE;
   line-height: 125%;
-  letter-spacing: -5%;
+  letter-spacing:  -0.05em;
   text-align: center;
   color: #0b1b47;
 
@@ -157,6 +159,28 @@
 
   .title {
     font-size: 28px;
+
+    /* font-family: Concrette S TRIAL; */
+/* font-weight: 500; */
+/* font-style: Medium; */
+/* font-size: 28px; */
+/* leading-trim: NONE; */
+/* line-height: 90%; */
+/* letter-spacing: -2%; */
+/* text-align: center; */
+
+  }
+
+  .subtitle {
+    /* font-family: Work Sans; */
+/* font-weight: 500; */
+/* font-style: Medium; */
+/* font-size: 14px; */
+/* leading-trim: NONE; */
+/* line-height: 125%; */
+/* letter-spacing: -0.05em; */
+/* text-align: center; */
+
   }
 
   .card {
