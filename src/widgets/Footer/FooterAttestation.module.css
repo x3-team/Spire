@@ -12,24 +12,27 @@
 
 
 .footerTextGrid {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
   width: 100%;
-  gap: 16px;
+  gap: 8px;
 }
 
 .contractAddress {
+  
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 125%;
   letter-spacing: -0.05em;
   color: #0b1b47;
   opacity: 0.5;
-  justify-self: start;
   white-space: nowrap;
+  margin-right: auto;
 }
 
 .proofText {
@@ -41,23 +44,26 @@
   letter-spacing: -0.05em;
   color: #0b1b47;
   opacity: 0.5;
-  justify-self: center;
+  flex: 1;
+  width: auto;
   text-align: center;
+  margin: 0;
 }
 
 @media (max-width: 767px) {
   .footerTextGrid {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    flex-direction: column;
+    align-items: center;
     gap: 4px;
-    justify-items: center;
   }
   .contractAddress {
-    justify-self: center;
     white-space: normal;
+    margin-right: 0;
+    text-align: center;
   }
   .proofText {
-    justify-self: center;
-    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
   }
 }
