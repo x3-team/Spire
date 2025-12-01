@@ -12,19 +12,37 @@ export const StepOneCard = () => {
       <h2 className={styles.title}>Generate Address Proof</h2>
 
       <div className={styles.step}>
-        <div className={styles.stepNumber}>Step 1. <strong>Generate a Signature</strong></div>
-        <div className={styles.stepSub}>You must sign a message to prove you own this address</div>
+        <div className={styles.stepContainer}>
+          <div className={styles.stepBlock}>
+            <div className={styles.stepNumber}>Step 1.</div>
+            <div className={styles.stepNumberStrong}>Generate a Signature</div>
+          </div>
+          <div className={styles.stepSub}>
+            You must sign a message to prove you own this address
+          </div>
+        </div>
         {/* <button className={styles.primaryButton}>Generate Address Proof Signature</button> */}
-        <Button connected={false} address="0x7853c0b7e123c0b7" onClick={() => router.push("/attestation/two")} />
-        
+        <Button
+          connected={false}
+          address="0x7853c0b7e123c0b7"
+          onClick={() => router.push("/attestation/two")}
+        />
       </div>
 
-      <div className={`${styles.step} ${styles.disabledStep}`}>
-        Step 2. Scan QR with Self app
+      <div className={styles.stepContainer}>
+        {/* Step 2. Scan QR with Self app */}
+        <div className={styles.stepBlock}>
+          <div className={styles.stepLast}>Step 2.</div>
+          <div className={styles.stepLastStrong}>Scan QR with Self app</div>
+        </div>
       </div>
 
-      <div className={`${styles.step} ${styles.disabledStep}`}>
-        Step 3. Check Verification Status
+      <div className={styles.stepContainer}>
+        {/* Step 3. Check Verification Status */}
+        <div className={styles.stepBlock}>
+          <div className={styles.stepLast}>Step 3.</div>
+          <div className={styles.stepLastStrong}>Check Verification Status</div>
+        </div>
       </div>
     </div>
   );
